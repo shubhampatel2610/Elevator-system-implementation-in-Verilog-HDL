@@ -75,7 +75,6 @@ module elevator(input [3:0] req_floor,input clk);
          if(floor_status[curr_floor]==1)
           begin
              #10
-            $display("aa");
              floor_status[curr_floor]=0;
           end
     else if(curr_floor==target_floor || curr_floor==0)
