@@ -55,8 +55,6 @@ module elevator(input [3:0] req_floor,input clk);
           begin
             #10
             floor_status[curr_floor]=0;
-            
-            //curr_floor++;
           end
     else if(curr_floor==target_floor || curr_floor==7)
         begin
